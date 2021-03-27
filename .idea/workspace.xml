@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="546ab175-729f-47f8-91e6-6df3a40a325b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cloud.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desert.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Forest.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main.py (до переделки)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mountain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Palm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ship.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo_2020-12-28_15-17-32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo_2020-12-28_15-26-59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo_2021-02-15_16-34-51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-5.15.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-5.15.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-5.15.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-5.15.2.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-5.15.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-5.15.2.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/Qt3DAnimation.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/Qt3DCore.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/Qt3DExtras.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/Qt3DInput.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/Qt3DLogic.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/Qt3DRender.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/QtCore.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/QtDBus.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/QtGui.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/QtNetwork.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/QtOpenGL.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/QtPrintSupport.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/QtSql.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/QtTest.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/QtWidgets.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/QtXml.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/__init__.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5-stubs/sip.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QAxContainer.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QAxContainer.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/busyindicator-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/busyindicator-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/busyindicator-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/button-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/button-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/button-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/checkbox-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/checkbox-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/checkbox-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/combobox-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/combobox-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/combobox-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/delaybutton-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/delaybutton-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/delaybutton-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/dial-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/dial-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/dial-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/frame-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/frame-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/frame-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/groupbox-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/groupbox-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/groupbox-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/itemdelegate-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/itemdelegate-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/itemdelegate-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/label-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/label-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/label-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/page-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/page-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/page-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/pageindicator-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/pageindicator-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/pageindicator-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/pane-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/pane-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/pane-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/progressbar-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/progressbar-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/progressbar-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/radiobutton-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/radiobutton-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/radiobutton-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/rangeslider-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/rangeslider-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/rangeslider-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/roundbutton-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/roundbutton-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/roundbutton-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/scrollview-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/scrollview-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/scrollview-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/slider-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/slider-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/slider-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/spinbox-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/spinbox-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/spinbox-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/stackview-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/stackview-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/stackview-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/swipeview-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/swipeview-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/swipeview-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/switch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/switch-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/switch-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/textarea-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/textarea-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/textarea-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/textfield-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/textfield-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/textfield-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/toolbar-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/toolbar-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/toolbar-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/toolbutton-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/toolbutton-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/toolbutton-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/toolseparator-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/toolseparator-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/toolseparator-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/tumbler-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/tumbler-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images/tumbler-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ApplicationWindowStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ApplicationWindowStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/BasicTableViewStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/BasicTableViewStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/BusyIndicatorStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/BusyIndicatorStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ButtonStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ButtonStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CalendarStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CalendarStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CheckBoxStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CheckBoxStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CircularButtonStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CircularButtonStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CircularGaugeStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CircularGaugeStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CircularTickmarkLabelStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CircularTickmarkLabelStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ComboBoxStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ComboBoxStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CommonStyleHelper.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/CommonStyleHelper.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/DelayButtonStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/DelayButtonStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/DialStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/DialStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/FocusFrameStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/FocusFrameStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/GaugeStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/GaugeStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/GroupBoxStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/GroupBoxStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/HandleStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/HandleStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/HandleStyleHelper.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/HandleStyleHelper.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/MenuBarStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/MenuBarStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/MenuStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/MenuStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/PieMenuStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/PieMenuStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ProgressBarStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ProgressBarStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/RadioButtonStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/RadioButtonStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ScrollViewStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ScrollViewStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/SliderStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/SliderStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/SpinBoxStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/SpinBoxStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/StatusBarStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/StatusBarStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/StatusIndicatorStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/StatusIndicatorStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/SwitchStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/SwitchStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TabViewStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TabViewStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TableViewStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TableViewStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TextAreaStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TextAreaStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TextFieldStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TextFieldStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ToggleButtonStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ToggleButtonStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ToolBarStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ToolBarStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ToolButtonStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/ToolButtonStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TreeViewStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TreeViewStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TumblerStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/TumblerStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/arrow-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/arrow-down@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/arrow-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/arrow-left@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/arrow-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/arrow-right@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/arrow-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/arrow-up@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/button_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/check@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/editbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/focusframe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/groupbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/knob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/leftanglearrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/needle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/progress-indeterminate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/rightanglearrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/scrollbar-handle-horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/scrollbar-handle-transient.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/scrollbar-handle-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/slider-groove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/slider-handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/spinner_large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/spinner_medium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/spinner_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/tab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images/tab_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ApplicationWindowStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ApplicationWindowStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/BusyIndicatorStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/BusyIndicatorStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ButtonStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ButtonStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/CalendarStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/CalendarStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/CheckBoxStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/CheckBoxStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ComboBoxStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ComboBoxStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/FocusFrameStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/FocusFrameStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/GroupBoxStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/GroupBoxStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/MenuBarStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/MenuBarStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/MenuStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/MenuStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ProgressBarStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ProgressBarStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/RadioButtonStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/RadioButtonStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/RowItemSingleton.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/RowItemSingleton.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ScrollViewStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ScrollViewStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/SliderStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/SliderStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/SpinBoxStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/SpinBoxStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/StatusBarStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/StatusBarStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/SwitchStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/SwitchStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/TabViewStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/TabViewStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/TableViewStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/TableViewStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/TextAreaStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/TextAreaStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/TextFieldStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/TextFieldStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ToolBarStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ToolBarStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ToolButtonStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/ToolButtonStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/TreeViewStyle.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/TreeViewStyle.qmlc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop/qmldir" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Flat/plugins.qmltypes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Flat/qmldir" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Controls/Styles/Flat/qtquickextrasflatplugin.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/circulargauge-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/circulargauge-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/delaybutton-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/delaybutton-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/dial-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/dial-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/gauge-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/gauge-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/picture-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/picture-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/piemenu-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/piemenu-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/statusindicator-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/statusindicator-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/togglebutton-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/togglebutton-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/tumbler-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick/Extras/designer/images/tumbler-icon16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Effects/designer/images/effect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Effects/designer/images/effect16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Effects/designer/images/effect@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Effects/designer/source/effect_template.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/CustomMaterialSpecifics.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/FrostedGlassMaterialSection.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/FrostedGlassMaterialSpecifics.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/FrostedGlassSinglePassMaterialSection.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/FrostedGlassSinglePassMaterialSpecifics.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/GlassMaterialSection.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/GlassMaterialSpecifics.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/GlassRefractiveMaterialSection.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/GlassRefractiveMaterialSpecifics.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/IdComboBox.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/PaperArtisticMaterialSection.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/PaperArtisticMaterialSpecifics.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/PaperOfficeMaterialSection.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/PaperOfficeMaterialSpecifics.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/PlasticStructuredRedEmissiveMaterialSection.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/PlasticStructuredRedEmissiveMaterialSpecifics.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/PlasticStructuredRedMaterialSection.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/PlasticStructuredRedMaterialSpecifics.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/SteelMilledConcentricMaterialSection.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/SteelMilledConcentricMaterialSpecifics.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/images/custommaterial.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/images/custommaterial16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/images/custommaterial@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/materiallib.metainfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/Qt/qml/QtQuick3D/Materials/designer/source/custommaterial_template.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtBluetooth.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtBluetooth.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtCore.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtCore.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtDBus.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtDBus.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtDesigner.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtDesigner.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtGui.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtGui.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtHelp.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtHelp.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtLocation.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtLocation.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtMultimedia.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtMultimedia.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtMultimediaWidgets.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtMultimediaWidgets.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtNetwork.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtNetwork.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtNetworkAuth.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtNetworkAuth.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtNfc.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtNfc.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtOpenGL.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtOpenGL.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtPositioning.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtPositioning.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtPrintSupport.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtPrintSupport.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtQml.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtQml.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtQuick.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtQuick.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtQuick3D.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtQuick3D.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtQuickWidgets.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtQuickWidgets.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtRemoteObjects.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtRemoteObjects.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtSensors.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtSensors.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtSerialPort.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtSerialPort.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtSql.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtSql.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtSvg.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtSvg.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtTest.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtTest.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtTextToSpeech.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtTextToSpeech.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtWebChannel.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtWebChannel.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtWebSockets.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtWebSockets.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtWidgets.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtWidgets.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtWinExtras.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtWinExtras.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtXml.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtXml.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtXmlPatterns.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/QtXmlPatterns.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/_QOpenGLFunctions_2_0.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/_QOpenGLFunctions_2_1.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/_QOpenGLFunctions_4_1_Core.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/pylupdate.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/pylupdate_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/pyrcc.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/pyrcc_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/sip.cp38-win32.pyd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5_sip-12.8.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5_sip-12.8.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5_sip-12.8.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5_sip-12.8.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5_sip-12.8.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5_stubs-5.14.2.2-py3.8.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5_stubs-5.14.2.2-py3.8.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5_stubs-5.14.2.2-py3.8.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5_stubs-5.14.2.2-py3.8.egg-info/installed-files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyQt5_stubs-5.14.2.2-py3.8.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/_distutils_hack/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/_distutils_hack/override.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/distutils-precedence.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/easy_install.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-20.3.3.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-20.3.3.dist-info/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-20.3.3.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-20.3.3.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-20.3.3.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-20.3.3.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-20.3.3.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/appdirs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/contextlib2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/api_tests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/zip-safe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py-1.10.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py-1.10.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py-1.10.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py-1.10.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py-1.10.0.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py-1.10.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py-1.10.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/__init__.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/__metainfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_builtin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_code/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_code/_assertionnew.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_code/_assertionold.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_code/_py2traceback.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_code/assertion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_code/code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_code/source.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_io/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_io/capture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_io/saferepr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_io/terminalwriter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_log/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_log/log.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_log/warning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_path/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_path/cacheutil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_path/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_path/local.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_path/svnurl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_path/svnwc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_process/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_process/cmdexec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_process/forkedfunc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_process/killproc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_std.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_vendored_packages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/_xmlgen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/error.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/iniconfig.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/io.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/path.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/py/xml.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-51.1.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-51.1.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-51.1.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-51.1.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-51.1.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-51.1.0.dist-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-51.1.0.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-51.1.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_deprecation_warning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/_imp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/archive_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/build_meta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/cli-32.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/cli-64.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/cli.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/dep_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/depends.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/dist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/extension.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/glob.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/gui-32.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/gui-64.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/gui.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/installer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/launch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/lib2to3_ex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/monkey.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/msvc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/namespaces.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/package_index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/py34compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/sandbox.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/script (dev).tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/script.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/ssl_support.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/tests/indexes/test_links_priority/simple/foobar/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/unicode_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/wheel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools/windows_support.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ui-0.1.4-py3.8.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ui-0.1.4-py3.8.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ui-0.1.4-py3.8.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ui-0.1.4-py3.8.egg-info/installed-files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ui-0.1.4-py3.8.egg-info/not-zip-safe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ui-0.1.4-py3.8.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/ui/ui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/activate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/easy_install-3.8.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/pip.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/pip3.8.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/pip3.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/pyinstaller.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/pylupdate5.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/pyrcc5.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/python.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Scripts/pyuic5.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Враги.7z" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Враги.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Жетоны.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Карты Событий.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Миссия 1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Мишина Супер Игра.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Персонажи.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Поиск еды.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Предметы файлы.7z" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Предметы.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/События.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Состояния-двустороннее.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/жетоны.7z" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Game.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mIRUEUi62qLPx5MCnVvbbQ35iA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Main.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Game" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Main">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Game" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Testing" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Game" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Game" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Main" />
+      <item itemvalue="Python.Testing" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="546ab175-729f-47f8-91e6-6df3a40a325b" name="Default Changelist" comment="" />
+      <created>1609179131707</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609179131707</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
