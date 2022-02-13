@@ -9,7 +9,6 @@ from PyQt5.QtGui import QPixmap
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from PyQt5.QtCore import QUrl, QDir
 
-
 # СОБЫТИЯ
 
 Random_aim = random.randint(1, 3)  # Создание рандомной цели
@@ -23,7 +22,7 @@ img.save("img_with_watermark.png")
 
 
 def random_mount_event():
-    Random_Mount_Event = random.randint(1, 3)
+    Random_Mount_Event = random.randint(1, 4)
     if Random_Mount_Event == 1:  # События горы при открытии
         return ("Пробираясь по сыпучему откосу, \nвы оступаетесь и катитесь по\n волне осыпающихся камней.\n"
                 "Пройдите проверку самообладания 2. \nПрибавьте 1 к сложности за \nкаждые 3 кг груза. \n"
@@ -39,21 +38,35 @@ def random_mount_event():
                 "Группа может потратить \nдополнительное движение чтобы \nобойти ее. "
                 "Имея альпинистское \nснаряжение, любой член экспедиции \nможет пройти проверку Акробатики 3,\n"
                 "чтобы попробовать перепрыгнуть \nчерез расщелину и помочь остальным \nпереправиться. "
-                "При провале он \nполучает тяжелое ранение.")
+                "При провале он \nполучает тяжелое ранение и должен \nвзять карту состояния Перелом ноги.")
+
+    if Random_Mount_Event == 4:
+        return ("Исследователь с наименьшим показателем\n внимания спотыкается и падает с откоса. \n"
+                "Ниже по склону он застревает рукой в камнях.\n Один любой исследователь может пройти\n"
+                "проверку самообладания 3 чтобы помочь\n ему выбраться. При провале застрявший исследователь\n"
+                "получает состояние Перелом руки.")
     return
 
 
 def random_night_mount_event():
-    Random_Night_Mount_Event = random.randint(1, 3)
+    Random_Night_Mount_Event = random.randint(1, 4)
     if Random_Night_Mount_Event == 1:  # События горы ночью
-        return ("Холодный ветер пробирает до костей. \n"
+        return ("Отменяется костром.\n"
+                "Холодный ветер пробирает до костей.\n"
                 "Путешественники без теплого \nодеяла получают состояние Озноб.")
     if Random_Night_Mount_Event == 2:
-        return ("На огонь костра слетается \nмного насекомых.\n"
+        return ("Только если экспедиция развела костер.\n"
+                "На огонь костра слетается \nмного насекомых.\n"
                 "Исследователь с наименьшим \nпоказателем Внимания \nполучает состояние Укусы насекомых. ")
     if Random_Night_Mount_Event == 3:
-        return ("Вы предусмотрительно накидываете \nтравы и песка на землю, чтобы \nне спать на жестких камнях.\n"
-                "Таким образом вам удается \nвыспаться в относительном комфорте.")
+        return ("С горы сходит лавина.\n" 
+                "Игрок с наименьшим показателем акробатики\n получает состояние Перелом Руки,\n "
+                "а так же одна любая палатка уничтожается")
+    if Random_Night_Mount_Event == 4:
+        return ("Вы просыпаетесь среди ночи от жуткого шума.\n"
+                "С горы сходит сель, вы успеваете передвинуть палатки и вещи,\n"
+                "но к сожалению под сель поцадают ваши запасы еды.\n"
+                "Сбросьте все жетоны провизии.\n")
     return
 
 
@@ -69,19 +82,20 @@ def random_jungle_event():
     if Random_Jungle_Event == 3:
         return ("Заросли становятся все \nгуще. "
                 "Игрок идущие во главе \nэкспедиции должен пройти \nпроверку Навигации 3.\n "
-                "При провале вы \nвозвращаетесь в предыдущую \nлокацию, не открывая новую.")
+                "При провале вы \nвозвращаетесь в предыдущую \nлокацию, новая локация все равно открывается.")
     return
 
 
 def random_night_jungle_event():
     Random_Night_Jungle_Event = random.randint(1, 3)
     if Random_Night_Jungle_Event == 1:  # События джунглей ночью
-        return ("Вы просыпаетесь от осознания \nтого, что кто-то разворошил костер. \n"
+        return ("Только если экспедиция развела костер.\n"
+                "Вы просыпаетесь от осознания \nтого, что кто-то разворошил костер. \n"
                 "Дикие кабаны прибежали на свет \nи разбросав угли скрылись. \n"
                 "В лагере начинается пожар. \n"
                 "Если есть запас воды, лидер \nэкспедиции должен пройдите \nпроверку самообладания 2, \n"
-                "чтобы потушить костер. \nИначе или при провале, \n"
-                "член экспедиции с наименьшим \nсамообладанием уничтожает \nслучайную вещь и получает \n1 легкое ранение.")
+                "чтобы потушить костер. \nИначе или при провале,\n"
+                "исследователи теряют случайный предмет.")
     if Random_Night_Jungle_Event == 2:
         return ("Всю ночь вы вздрагиваете \nот каждого шороха. \n"
                 "Наутро вы встаете еще более \nуставшим, чем когда ложились. \n"
@@ -89,7 +103,7 @@ def random_night_jungle_event():
     if Random_Night_Jungle_Event == 3:
         return ("Ночью проходит дождь. \nВы тратите много сил на \nзащиту лагеря от затопления. \n"
                 "Каждый исследователь получает \nна следующий ход -1 выносливость.\n"
-                "Если в локации нет знака \nдоступа к питьевой воды, \n"
+                "Если в локации нет знака \nдоступа к питьевой воде, \n"
                 "на следующий ход эта \nлокация получает знак \nдоступа к воде.")
     return
 
@@ -249,11 +263,11 @@ class Menu(object):
 
         Dialog_menu.setWindowTitle('Стартовое меню')
 
-        self.media_player = QMediaPlayer()  # МУЗЫКА
-        url = QUrl.fromLocalFile("metallica-the-unforgiven.mp3")
-        content = QMediaContent(url)
-        self.media_player.setMedia(content)
-        self.media_player.play()
+        # self.media_player = QMediaPlayer()  # МУЗЫКА     Пока убрал, заебала
+        # url = QUrl.fromLocalFile("metallica-the-unforgiven.mp3")
+        # content = QMediaContent(url)
+        # self.media_player.setMedia(content)
+        # self.media_player.play()
 
         self.pushButton = QtWidgets.QPushButton(Dialog_menu)
         self.pushButton.setGeometry(QtCore.QRect(442, 224, 423, 94))
@@ -381,8 +395,6 @@ class Character_selection(object):
     # def __init__(self):
     #     self.pushButton = QtWidgets.QPushButton(Dialog_menu)
 
-
-
     def setupUi(self, Character_selection):
         Character_selection.setObjectName("Сharacter_selection")
         Character_selection.resize(1500, 1200)
@@ -430,13 +442,13 @@ class Character_selection(object):
 # ДИОЛОГОВОЕ ОКНО РАСПРЕДЕЛЕНИЯ ШМОТОК
 
 class Item_distribution(object):
-                                             # Сумки
-    Nico_Robin_bag = {"Еда": 1}          # 7 кг
-    Jim_Kippers_bag = {"Еда": 1}         # 8 кг
-    Marco_Wolfhound_bag = {"Еда": 1}     # 8 кг
-    Carry_King_bag = {"Еда": 1}          # 9 кг
-    Angela_bag = {"Еда": 1}              # 6 кг
-    Nick_James_bag = {"Еда": 1}          # 8 кг
+    # Сумки
+    Nico_Robin_bag = {"Еда": 1}  # 7 кг
+    Jim_Kippers_bag = {"Еда": 1}  # 8 кг
+    Marco_Wolfhound_bag = {"Еда": 1}  # 8 кг
+    Carry_King_bag = {"Еда": 1}  # 9 кг
+    Angela_bag = {"Еда": 1}  # 6 кг
+    Nick_James_bag = {"Еда": 1}  # 8 кг
 
     @staticmethod
     def nico_over():
@@ -492,16 +504,15 @@ class Item_distribution(object):
         msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
         returnValue = msgBox.exec()  # Если не сохранить в переменную то всё сломается
 
-
     def set_proggressbars(self):
         Idi.Nico_progress1.setValue(int(((sum(Item_distribution.Nico_Robin_bag.values())) * 100) / 7))
         if int(((sum(Item_distribution.Nico_Robin_bag.values())) * 100) / 7) > 100:
             Item_distribution.nico_over()
-        Idi.Jim_progress2.setValue(int(((sum(Item_distribution.Jim_Kippers_bag.values()))*100)/8))
-        if int(((sum(Item_distribution.Jim_Kippers_bag.values()))*100)/8) > 100:
+        Idi.Jim_progress2.setValue(int(((sum(Item_distribution.Jim_Kippers_bag.values())) * 100) / 8))
+        if int(((sum(Item_distribution.Jim_Kippers_bag.values())) * 100) / 8) > 100:
             Item_distribution.Jim_over()
-        Idi.Marco_progress3.setValue(int(((sum(Item_distribution.Marco_Wolfhound_bag.values()))*100)/8))
-        if int(((sum(Item_distribution.Marco_Wolfhound_bag.values()))*100)/8) > 100:
+        Idi.Marco_progress3.setValue(int(((sum(Item_distribution.Marco_Wolfhound_bag.values())) * 100) / 8))
+        if int(((sum(Item_distribution.Marco_Wolfhound_bag.values())) * 100) / 8) > 100:
             Item_distribution.Marco_over()
         Idi.Carry_progress4.setValue(int(((sum(Item_distribution.Carry_King_bag.values())) * 100) / 9))
         if int(((sum(Item_distribution.Carry_King_bag.values())) * 100) / 9) > 100:
@@ -535,7 +546,7 @@ class Item_distribution(object):
             Angela_str = Angela_str + str(key) + " - " + str(items) + " кг \n"
         Idi.Angela_bag_label.setText(Angela_str)
         Nick_str = ""
-        for key, items in Item_distribution.Angela_bag.items():
+        for key, items in Item_distribution.Nick_James_bag.items():
             Nick_str = Nick_str + str(key) + " - " + str(items) + " кг \n"
         Idi.Nick_bag_label.setText(Nick_str)
 
@@ -546,7 +557,6 @@ class Item_distribution(object):
         Idi.Carry_progress4.setValue(10)
         Idi.Angela_progress5.setValue(10)
         Idi.Nick_progress6.setValue(10)
-
 
     def stick_function(self):
         Item_distribution.Nico_Robin_bag.pop("Посох 1", "")
@@ -571,7 +581,6 @@ class Item_distribution(object):
         self.set_start_value_for_progressbars()
         self.set_text_to_labels()
 
-
     def stick2_function(self):
         Item_distribution.Nico_Robin_bag.pop("Посох 2", "")
         Item_distribution.Jim_Kippers_bag.pop("Посох 2", "")
@@ -580,43 +589,43 @@ class Item_distribution(object):
         Item_distribution.Angela_bag.pop("Посох 2", "")
         Item_distribution.Nick_James_bag.pop("Посох 2", "")
         if self.stick2_combobox.currentText() == "Нико Робин":
-             Item_distribution.Nico_Robin_bag["Посох 2"] = 0.5
+            Item_distribution.Nico_Robin_bag["Посох 2"] = 0.5
         elif self.stick2_combobox.currentText() == "Джим Киперс":
-             Item_distribution.Jim_Kippers_bag["Посох 2"] = 0.5
+            Item_distribution.Jim_Kippers_bag["Посох 2"] = 0.5
         elif self.stick2_combobox.currentText() == "Марко Волкодав":
-              Item_distribution.Marco_Wolfhound_bag["Посох 2"] = 0.5
+            Item_distribution.Marco_Wolfhound_bag["Посох 2"] = 0.5
         elif self.stick2_combobox.currentText() == "Кэри Кинг":
-             Item_distribution.Carry_King_bag["Посох 2"] = 0.5
+            Item_distribution.Carry_King_bag["Посох 2"] = 0.5
         elif self.stick2_combobox.currentText() == "Ангела":
             Item_distribution.Angela_bag["Посох 12"] = 0.5
         elif self.stick2_combobox.currentText() == "Ник Джеймс":
-             Item_distribution.Nick_James_bag["Посох 2"] = 0.5
+            Item_distribution.Nick_James_bag["Посох 2"] = 0.5
         self.set_start_value_for_progressbars()
         self.set_proggressbars()
         self.set_text_to_labels()
 
     def bag_function(self):
-         Item_distribution.Nico_Robin_bag.pop("Рюкзак", "")
-         Item_distribution.Jim_Kippers_bag.pop("Рюкзак", "")
-         Item_distribution.Marco_Wolfhound_bag.pop("Рюкзак", "")
-         Item_distribution.Carry_King_bag.pop("Рюкзак", "")
-         Item_distribution.Angela_bag.pop("Рюкзак", "")
-         Item_distribution.Nick_James_bag.pop("Рюкзак", "")
-         if self.bag_combobox.currentText() == "Нико Робин":
-             Item_distribution.Nico_Robin_bag["Рюкзак"] = 1
-         elif self.bag_combobox.currentText() == "Джим Киперс":
-             Item_distribution.Jim_Kippers_bag["Рюкзак"] = 1
-         elif self.bag_combobox.currentText() == "Марко Волкодав":
-             Item_distribution.Marco_Wolfhound_bag["Рюкзак"] = 1
-         elif self.bag_combobox.currentText() == "Кэри Кинг":
-             Item_distribution.Carry_King_bag["Рюкзак"] = 1
-         elif self.bag_combobox.currentText() == "Ангела":
-             Item_distribution.Angela_bag["Рюкзак"] = 1
-         elif self.bag_combobox.currentText() == "Ник Джеймс":
-             Item_distribution.Nick_James_bag["Рюкзак"] = 1
-         self.set_start_value_for_progressbars()
-         self.set_proggressbars()
-         self.set_text_to_labels()
+        Item_distribution.Nico_Robin_bag.pop("Рюкзак", "")
+        Item_distribution.Jim_Kippers_bag.pop("Рюкзак", "")
+        Item_distribution.Marco_Wolfhound_bag.pop("Рюкзак", "")
+        Item_distribution.Carry_King_bag.pop("Рюкзак", "")
+        Item_distribution.Angela_bag.pop("Рюкзак", "")
+        Item_distribution.Nick_James_bag.pop("Рюкзак", "")
+        if self.bag_combobox.currentText() == "Нико Робин":
+            Item_distribution.Nico_Robin_bag["Рюкзак"] = 1
+        elif self.bag_combobox.currentText() == "Джим Киперс":
+            Item_distribution.Jim_Kippers_bag["Рюкзак"] = 1
+        elif self.bag_combobox.currentText() == "Марко Волкодав":
+            Item_distribution.Marco_Wolfhound_bag["Рюкзак"] = 1
+        elif self.bag_combobox.currentText() == "Кэри Кинг":
+            Item_distribution.Carry_King_bag["Рюкзак"] = 1
+        elif self.bag_combobox.currentText() == "Ангела":
+            Item_distribution.Angela_bag["Рюкзак"] = 1
+        elif self.bag_combobox.currentText() == "Ник Джеймс":
+            Item_distribution.Nick_James_bag["Рюкзак"] = 1
+        self.set_start_value_for_progressbars()
+        self.set_proggressbars()
+        self.set_text_to_labels()
 
     def compass_function(self):
         Item_distribution.Nico_Robin_bag.pop("Компас", "")
@@ -715,7 +724,7 @@ class Item_distribution(object):
         Item_distribution.Jim_Kippers_bag.pop("Фляга 1", "")
         Item_distribution.Marco_Wolfhound_bag.pop("Фляга 1", "")
         Item_distribution.Carry_King_bag.pop("Фляга 1", "")
-        Item_distribution.Angela_bag.pop("Фляга 1","")
+        Item_distribution.Angela_bag.pop("Фляга 1", "")
         Item_distribution.Nick_James_bag.pop("Фляга 1", "")
         if self.flask_combobox.currentText() == "Нико Робин":
             Item_distribution.Nico_Robin_bag["Фляга 1"] = 0.4
@@ -1065,12 +1074,19 @@ class Item_distribution(object):
         # print("")
 
     def change_proggressbars_text(self):
-        Idi.Nico_progress1.setFormat(str(int(((sum(Item_distribution.Nico_Robin_bag.values())) * 100) / 7)) + " % Загруженность")
-        Idi.Jim_progress2.setFormat(str(int(((sum(Item_distribution.Jim_Kippers_bag.values())) * 100) / 8)) + " % Загруженность")
-        Idi.Marco_progress3.setFormat(str(int(((sum(Item_distribution.Marco_Wolfhound_bag.values())) * 100) / 8)) + " % Загруженность")
-        Idi.Carry_progress4.setFormat(str(int(((sum(Item_distribution.Carry_King_bag.values())) * 100) / 9)) + " % Загруженность")
-        Idi.Angela_progress5.setFormat(str(int(((sum(Item_distribution.Angela_bag.values())) * 100) / 6)) + " % Загруженность")
-        Idi.Nick_progress6.setFormat(str(int(((sum(Item_distribution.Nick_James_bag.values())) * 100) / 8)) + " % Загруженность")
+        Idi.Nico_progress1.setFormat(
+            str(int(((sum(Item_distribution.Nico_Robin_bag.values())) * 100) / 7)) + " % Загруженность")
+        Idi.Jim_progress2.setFormat(
+            str(int(((sum(Item_distribution.Jim_Kippers_bag.values())) * 100) / 8)) + " % Загруженность")
+        Idi.Marco_progress3.setFormat(
+            str(int(((sum(Item_distribution.Marco_Wolfhound_bag.values())) * 100) / 8)) + " % Загруженность")
+        Idi.Carry_progress4.setFormat(
+            str(int(((sum(Item_distribution.Carry_King_bag.values())) * 100) / 9)) + " % Загруженность")
+        Idi.Angela_progress5.setFormat(
+            str(int(((sum(Item_distribution.Angela_bag.values())) * 100) / 6)) + " % Загруженность")
+        Idi.Nick_progress6.setFormat(
+            str(int(((sum(Item_distribution.Nick_James_bag.values())) * 100) / 8)) + " % Загруженность")
+
     # def func(self):
     #       print(self.stick_combobox.currentText())   # Функцию поменять
 
@@ -1087,23 +1103,24 @@ class Item_distribution(object):
 
         Item_distribution.setWindowTitle('Item_distribution')
 
-
         self.stick_labbel = QtWidgets.QLabel(Item_distribution)
         pixmap1 = QPixmap("Game Pictures/Предметы/Посох.png")
         self.stick_labbel.setPixmap(pixmap1)
         self.stick_labbel.setGeometry(100, 200, 100, 100)
-        self.stick_labbel.setToolTip("0.5кг. Раз в день на передвижение тратится \nна 1 действие меньше \n(не может быть меньше 1 действия). \nПри сражении с врагами +1 к силе")
+        self.stick_labbel.setToolTip(
+            "0.5кг. Раз в день на передвижение тратится \nна 1 действие меньше \n(не может быть меньше 1 действия). \nПри сражении с врагами +1 к силе")
 
         self.stick_combobox = QtWidgets.QComboBox(Item_distribution)
         self.stick_combobox.setGeometry(100, 300, 100, 20)
-        self.stick_combobox.activated.connect(self.stick_function)   # комбобокс (выпадающий список)
+        self.stick_combobox.activated.connect(self.stick_function)  # комбобокс (выпадающий список)
         self.stick_combobox.activated.connect(self.change_proggressbars_text)
 
         self.stick2_labbel = QtWidgets.QLabel(Item_distribution)
         pixmap1 = QPixmap("Game Pictures/Предметы/Посох.png")
         self.stick2_labbel.setPixmap(pixmap1)
         self.stick2_labbel.setGeometry(250, 200, 100, 100)
-        self.stick2_labbel.setToolTip("0.5кг. Раз в день на передвижение тратится \nна 1 действие меньше \n(не может быть меньше 1 действия). \nПри сражении с врагами +1 к силе")
+        self.stick2_labbel.setToolTip(
+            "0.5кг. Раз в день на передвижение тратится \nна 1 действие меньше \n(не может быть меньше 1 действия). \nПри сражении с врагами +1 к силе")
 
         self.stick2_combobox = QtWidgets.QComboBox(Item_distribution)
         self.stick2_combobox.setGeometry(250, 300, 100, 20)
@@ -1136,7 +1153,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Веревка.png")
         self.rope_labbel.setPixmap(pixmap1)
         self.rope_labbel.setGeometry(700, 200, 100, 100)
-        self.rope_labbel.setToolTip("0.5кг. При перемещении в горных районах \nпозволяет одному из исследователей \nпотратить на 1 действие меньше.")
+        self.rope_labbel.setToolTip(
+            "0.5кг. При перемещении в горных районах \nпозволяет одному из исследователей \nпотратить на 1 действие меньше.")
 
         self.rope_combobox = QtWidgets.QComboBox(Item_distribution)
         self.rope_combobox.setGeometry(700, 300, 100, 20)
@@ -1147,7 +1165,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Бурдюк.png")
         self.wineskin_labbel.setPixmap(pixmap1)
         self.wineskin_labbel.setGeometry(850, 200, 100, 100)
-        self.wineskin_labbel.setToolTip("0,6кг полный, 0,3кг пустой. Помогает сохранить воду. \nВмещает две дневные нормы воды.")
+        self.wineskin_labbel.setToolTip(
+            "0,6кг полный, 0,3кг пустой. Помогает сохранить воду. \nВмещает две дневные нормы воды.")
 
         self.wineskin_combobox = QtWidgets.QComboBox(Item_distribution)
         self.wineskin_combobox.setGeometry(850, 300, 100, 20)
@@ -1158,7 +1177,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Бурдюк.png")
         self.wineskin2_labbel.setPixmap(pixmap1)
         self.wineskin2_labbel.setGeometry(1000, 200, 100, 100)
-        self.wineskin2_labbel.setToolTip("0,6кг полный, 0,3кг пустой. Помогает сохранить воду. \nВмещает две дневные нормы воды.")
+        self.wineskin2_labbel.setToolTip(
+            "0,6кг полный, 0,3кг пустой. Помогает сохранить воду. \nВмещает две дневные нормы воды.")
 
         self.wineskin2_combobox = QtWidgets.QComboBox(Item_distribution)
         self.wineskin2_combobox.setGeometry(1000, 300, 100, 20)
@@ -1169,7 +1189,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Фляга.png")
         self.flask_labbel.setPixmap(pixmap1)
         self.flask_labbel.setGeometry(1150, 200, 100, 100)
-        self.flask_labbel.setToolTip("0,4кг полная, 0,2кг пустая. Помогает сохранить воду. \nВмещает одну дневную норму воды.")
+        self.flask_labbel.setToolTip(
+            "0,4кг полная, 0,2кг пустая. Помогает сохранить воду. \nВмещает одну дневную норму воды.")
 
         self.flask_combobox = QtWidgets.QComboBox(Item_distribution)
         self.flask_combobox.setGeometry(1150, 300, 100, 20)
@@ -1180,7 +1201,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Фляга.png")
         self.flask2_labbel.setPixmap(pixmap1)
         self.flask2_labbel.setGeometry(1300, 200, 100, 100)
-        self.flask2_labbel.setToolTip("0,4кг полная, 0,2кг пустая. Помогает сохранить воду. \nВмещает одну дневную норму воды.")
+        self.flask2_labbel.setToolTip(
+            "0,4кг полная, 0,2кг пустая. Помогает сохранить воду. \nВмещает одну дневную норму воды.")
 
         self.flask2_combobox = QtWidgets.QComboBox(Item_distribution)
         self.flask2_combobox.setGeometry(1300, 300, 100, 20)
@@ -1191,7 +1213,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Фляга.png")
         self.flask3_labbel.setPixmap(pixmap1)
         self.flask3_labbel.setGeometry(1450, 200, 100, 100)
-        self.flask3_labbel.setToolTip("0,4кг полная, 0,2кг пустая. Помогает сохранить воду. \nВмещает одну дневную норму воды.")
+        self.flask3_labbel.setToolTip(
+            "0,4кг полная, 0,2кг пустая. Помогает сохранить воду. \nВмещает одну дневную норму воды.")
 
         self.flask3_combobox = QtWidgets.QComboBox(Item_distribution)
         self.flask3_combobox.setGeometry(1450, 300, 100, 20)
@@ -1224,7 +1247,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/3х местная палатка.png")
         self.tent_for_3_labbel.setPixmap(pixmap1)
         self.tent_for_3_labbel.setGeometry(100, 400, 100, 100)
-        self.tent_for_3_labbel.setToolTip("4,5кг. Разложить - 1 действие. \nИсследователи ночующие без палатки, \nвосстанавливают на 1 действие меньше за ночь.")
+        self.tent_for_3_labbel.setToolTip(
+            "4,5кг. Разложить - 1 действие. \nИсследователи ночующие без палатки, \nвосстанавливают на 1 действие меньше за ночь.")
 
         self.tent_for_3_combobox = QtWidgets.QComboBox(Item_distribution)
         self.tent_for_3_combobox.setGeometry(100, 500, 100, 20)
@@ -1235,8 +1259,9 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Мачете.png")
         self.machete_labbel.setPixmap(pixmap1)
         self.machete_labbel.setGeometry(250, 400, 100, 100)
-        self.machete_labbel.setToolTip("0,5кг. При использовании во время \nсражения дает +2 к силе и наносит + 1 повреждение.\n"
-                                       "При передвижении по джунглям, \nвпереди идущий может потратить дополнительное\n действие, чтоб уменьшить сложность похода на 1.")
+        self.machete_labbel.setToolTip(
+            "0,5кг. При использовании во время \nсражения дает +2 к силе и наносит + 1 повреждение.\n"
+            "При передвижении по джунглям, \nвпереди идущий может потратить дополнительное\n действие, чтоб уменьшить сложность похода на 1.")
 
         self.machete_combobox = QtWidgets.QComboBox(Item_distribution)
         self.machete_combobox.setGeometry(250, 500, 100, 20)
@@ -1247,8 +1272,9 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Альпенистское снаряжение.png")
         self.climbing_equipment_labbel.setPixmap(pixmap1)
         self.climbing_equipment_labbel.setGeometry(400, 400, 100, 100)
-        self.climbing_equipment_labbel.setToolTip("1кг. Пробираясь по горной местности, \nигрок с этой картой может потратить \nдополнительное действие, чтобы остальные члены "
-                                                  "\nэкспедиции потратили на одной дествие меньше.")
+        self.climbing_equipment_labbel.setToolTip(
+            "1кг. Пробираясь по горной местности, \nигрок с этой картой может потратить \nдополнительное действие, чтобы остальные члены "
+            "\nэкспедиции потратили на одной дествие меньше.")
 
         self.climbing_equipment_combobox = QtWidgets.QComboBox(Item_distribution)
         self.climbing_equipment_combobox.setGeometry(400, 500, 100, 20)
@@ -1270,7 +1296,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Аптечка.png")
         self.medik_kid_labbel.setPixmap(pixmap1)
         self.medik_kid_labbel.setGeometry(700, 400, 100, 100)
-        self.medik_kid_labbel.setToolTip("0,5кг. За 1 действие можно вылечить легкое ранение \nили остановить тяжелое кровотечение. Имеет 3 заряда.")
+        self.medik_kid_labbel.setToolTip(
+            "0,5кг. За 1 действие можно вылечить легкое ранение \nили остановить тяжелое кровотечение. Имеет 3 заряда.")
 
         self.medik_kid_combobox = QtWidgets.QComboBox(Item_distribution)
         self.medik_kid_combobox.setGeometry(700, 500, 100, 20)
@@ -1281,7 +1308,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Первая помочь при переломах.png")
         self.fracture_medik_kid_labbel.setPixmap(pixmap1)
         self.fracture_medik_kid_labbel.setGeometry(850, 400, 100, 100)
-        self.fracture_medik_kid_labbel.setToolTip("0,5кг. За 1 действие можно вылечить тяжелое ранение, \nранение или использовать при переломах.")
+        self.fracture_medik_kid_labbel.setToolTip(
+            "0,5кг. За 1 действие можно вылечить тяжелое ранение, \nранение или использовать при переломах.")
 
         self.fracture_medik_kid_combobox = QtWidgets.QComboBox(Item_distribution)
         self.fracture_medik_kid_combobox.setGeometry(850, 500, 100, 20)
@@ -1292,7 +1320,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Противоядие.png")
         self.antidote_labbel.setPixmap(pixmap1)
         self.antidote_labbel.setGeometry(1000, 400, 100, 100)
-        self.antidote_labbel.setToolTip("0,5кг. За 1 действие можно вылечить Укус насекомых, \nУкус ядовитой змеи. Имеет 3 зарядов")
+        self.antidote_labbel.setToolTip(
+            "0,5кг. За 1 действие можно вылечить Укус насекомых, \nУкус ядовитой змеи. Имеет 3 зарядов")
 
         self.antidote_combobox = QtWidgets.QComboBox(Item_distribution)
         self.antidote_combobox.setGeometry(1000, 500, 100, 20)
@@ -1303,8 +1332,9 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Капкан.png")
         self.trap_labbel.setPixmap(pixmap1)
         self.trap_labbel.setGeometry(1150, 400, 100, 100)
-        self.trap_labbel.setToolTip("1кг. Установка/снятие - 1 действие. \nЗащищает лагерь от нападения хищников в ночное время. \n"
-                                    "Могут пользоваться только исследователи с навыком Охота.")
+        self.trap_labbel.setToolTip(
+            "1кг. Установка/снятие - 1 действие. \nЗащищает лагерь от нападения хищников в ночное время. \n"
+            "Могут пользоваться только исследователи с навыком Охота.")
 
         self.trap_combobox = QtWidgets.QComboBox(Item_distribution)
         self.trap_combobox.setGeometry(1150, 500, 100, 20)
@@ -1315,7 +1345,8 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Походный набор.png")
         self.trevelling_set_labbel.setPixmap(pixmap1)
         self.trevelling_set_labbel.setGeometry(1300, 400, 100, 100)
-        self.trevelling_set_labbel.setToolTip("1кг. Удваивает количество провизии, \nкоторую можно получить за убийство животных.")
+        self.trevelling_set_labbel.setToolTip(
+            "1кг. Удваивает количество провизии, \nкоторую можно получить за убийство животных.")
 
         self.trevelling_set_combobox = QtWidgets.QComboBox(Item_distribution)
         self.trevelling_set_combobox.setGeometry(1300, 500, 100, 20)
@@ -1326,23 +1357,22 @@ class Item_distribution(object):
         pixmap1 = QPixmap("Game Pictures/Предметы/Сигнальная ракета.png")
         self.flare_labbel.setPixmap(pixmap1)
         self.flare_labbel.setGeometry(1450, 400, 100, 100)
-        self.flare_labbel.setToolTip("0.5кг. Если вы как минимум в трех локациях от зоны высадки, \nможете за 1 действие сбросить эту карту, \n"
-                                     "и передвинуть счетчик времени на 1 деление назад по треку.")
+        self.flare_labbel.setToolTip(
+            "0.5кг. Если вы как минимум в трех локациях от зоны высадки, \nможете за 1 действие сбросить эту карту, \n"
+            "и передвинуть счетчик времени на 1 деление назад по треку.")
 
         self.flare_combobox = QtWidgets.QComboBox(Item_distribution)
         self.flare_combobox.setGeometry(1450, 500, 100, 20)
         self.flare_combobox.activated.connect(self.flare_function)
         self.flare_combobox.activated.connect(self.change_proggressbars_text)
 
-
-
-        self.pushButton = QtWidgets.QPushButton(Item_distribution)          # Далее
+        self.pushButton = QtWidgets.QPushButton(Item_distribution)  # Далее
         self.pushButton.setGeometry(QtCore.QRect(750, 15, 403, 94))
         self.pushButton.setIcon(QtGui.QIcon("Game Pictures/dalee.png"))
         self.pushButton.setIconSize(QtCore.QSize(423, 94))
         self.pushButton.setObjectName("pushButton")
 
-        self.Nico_label = QtWidgets.QLabel(Item_distribution)               # Иконки персов
+        self.Nico_label = QtWidgets.QLabel(Item_distribution)  # Иконки персов
         pixmap1 = QPixmap("Persons/Nico Robin face small.png")
         self.Nico_label.setPixmap(pixmap1)
         self.Nico_label.setGeometry(130, 700, 300, 300)
@@ -1487,6 +1517,104 @@ class Item_distribution(object):
         self.Nick_bag_label.setObjectName("Nick_bag_label")
 
 
+# Диологовое окно выбоота лидера экспедиции
+
+class Leader_selection(object):
+    # def __init__(self):
+    #     self.pushButton = QtWidgets.QPushButton(Dialog_menu)
+
+    def setupUi(self, Leader_selection):
+        Leader_selection.setObjectName("Leader_selection")
+        Leader_selection.resize(1750, 1200)
+
+        hbox = QHBoxLayout()
+        pixmap1 = QPixmap("Game Pictures/story-screen.jpg")  # Лидер)
+        lbl = QLabel()
+        lbl.setPixmap(pixmap1)
+        hbox.addWidget(lbl)
+        Leader_selection.setLayout(hbox)
+
+        Leader_selection.setWindowTitle('Leader_selection')
+
+        self.pushButton_1_advaturer = QtWidgets.QPushButton(Leader_selection)
+        self.pushButton_1_advaturer.setGeometry(QtCore.QRect(375, 721, 141, 141))
+        self.pushButton_1_advaturer.setMouseTracking(False)
+        self.pushButton_1_advaturer.setIconSize(QtCore.QSize(120, 120))
+        self.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))  # Перс 1
+        self.pushButton_1_advaturer.setStyleSheet("background-color: PowderBlue;")
+        self.pushButton_1_advaturer.setText("")
+        self.pushButton_1_advaturer.hide()
+        self.pushButton_1_advaturer.setObjectName("pushButton")
+
+        self.pushButton_2_advaturer = QtWidgets.QPushButton(Leader_selection)
+        self.pushButton_2_advaturer.setGeometry(QtCore.QRect(600, 721, 141, 141))
+        self.pushButton_2_advaturer.setMouseTracking(False)
+        self.pushButton_2_advaturer.setIconSize(QtCore.QSize(120, 120))
+        self.pushButton_2_advaturer.setIcon(QtGui.QIcon("Ship.jpg"))  # Перс 2
+        self.pushButton_2_advaturer.setStyleSheet("background-color: PowderBlue;")
+        self.pushButton_2_advaturer.setText("")
+        self.pushButton_2_advaturer.hide()
+        self.pushButton_2_advaturer.setObjectName("pushButton")
+
+        self.pushButton_3_advaturer = QtWidgets.QPushButton(Leader_selection)
+        self.pushButton_3_advaturer.setGeometry(QtCore.QRect(825, 721, 141, 141))
+        self.pushButton_3_advaturer.setMouseTracking(False)
+        self.pushButton_3_advaturer.setIconSize(QtCore.QSize(120, 120))
+        self.pushButton_3_advaturer.setIcon(QtGui.QIcon("Ship.jpg"))  # Перс 3
+        self.pushButton_3_advaturer.setStyleSheet("background-color: PowderBlue;")
+        self.pushButton_3_advaturer.setText("")
+        self.pushButton_3_advaturer.hide()
+        self.pushButton_3_advaturer.setObjectName("pushButton")
+
+        self.pushButton_4_advaturer = QtWidgets.QPushButton(Leader_selection)
+        self.pushButton_4_advaturer.setGeometry(QtCore.QRect(1050, 721, 141, 141))
+        self.pushButton_4_advaturer.setMouseTracking(False)
+        self.pushButton_4_advaturer.setIconSize(QtCore.QSize(120, 120))
+        self.pushButton_4_advaturer.setIcon(QtGui.QIcon("Ship.jpg"))  # Перс 4
+        self.pushButton_4_advaturer.setStyleSheet("background-color: PowderBlue;")
+        self.pushButton_4_advaturer.setText("")
+        self.pushButton_4_advaturer.hide()
+        self.pushButton_4_advaturer.setObjectName("pushButton")
+
+        self.pushButton_5_advaturer = QtWidgets.QPushButton(Leader_selection)
+        self.pushButton_5_advaturer.setGeometry(QtCore.QRect(1275, 721, 141, 141))
+        self.pushButton_5_advaturer.setMouseTracking(False)
+        self.pushButton_5_advaturer.setIconSize(QtCore.QSize(120, 120))
+        self.pushButton_5_advaturer.setIcon(QtGui.QIcon("Ship.jpg"))  # Перс 5
+        self.pushButton_5_advaturer.setStyleSheet("background-color: PowderBlue;")
+        self.pushButton_5_advaturer.setText("")
+        self.pushButton_5_advaturer.hide()
+        self.pushButton_5_advaturer.setObjectName("pushButton")
+
+        self.pushButton_dalee = QtWidgets.QPushButton(Leader_selection)  # Далее
+        self.pushButton_dalee.setGeometry(QtCore.QRect(750, 15, 403, 94))
+        self.pushButton_dalee.setIcon(QtGui.QIcon("Game Pictures/dalee.png"))
+        self.pushButton_dalee.setIconSize(QtCore.QSize(423, 94))
+        self.pushButton_dalee.setObjectName("pushButton_dalee")
+
+        self.Notification_label = QtWidgets.QLabel(Leader_selection)
+        self.Notification_label.setGeometry(QtCore.QRect(500, 250, 800, 200))
+        self.Notification_label.setStyleSheet("background-color: grey;")
+        self.Notification_label.setFrameShape(QtWidgets.QFrame.WinPanel)
+        self.Notification_label.setWordWrap(True)
+        font = QtGui.QFont()
+        font.setPointSize(30)
+        self.Notification_label.setFont(font)
+        self.Notification_label.setText("Выберите лидера экспедиции")
+        self.Notification_label.setObjectName("Notification_label")
+
+        self.Notification_label2 = QtWidgets.QLabel(Leader_selection)
+        self.Notification_label2.setGeometry(QtCore.QRect(500, 500, 800, 200))
+        self.Notification_label2.setStyleSheet("background-color: grey;")
+        self.Notification_label2.setFrameShape(QtWidgets.QFrame.WinPanel)
+        self.Notification_label2.setWordWrap(True)
+        font = QtGui.QFont()
+        font.setPointSize(30)
+        self.Notification_label2.setFont(font)
+        self.Notification_label2.setText("")
+        self.Notification_label2.setObjectName("Notification_label2")
+
+
 # ДИАЛОГОВОЕ ОКНО ПЕРВОЙ МИССИИ
 
 
@@ -1561,11 +1689,21 @@ class Mission_1(object):
         self.pushButton_ship.setGeometry(QtCore.QRect(350, 721, 141, 141))
         self.pushButton_ship.setMouseTracking(False)
         self.pushButton_ship.setIconSize(QtCore.QSize(120, 120))
-        self.pushButton_ship.setIcon(QtGui.QIcon("Ship.jpg"))  # Корабль
+        self.pushButton_ship.setIcon(QtGui.QIcon("Ship.jpg"))           # Корабль
         self.pushButton_ship.setStyleSheet("background-color: PowderBlue;")
         self.pushButton_ship.setText("")
-        self.pushButton_ship.setEnabled(False)
+        self.pushButton_ship.setEnabled(True)
         self.pushButton_ship.setObjectName("pushButton")
+
+        self.time_label = QtWidgets.QLabel(Dialog_mission_1)
+        self.time_label.setGeometry(QtCore.QRect(875, 150, 120, 120))
+        self.time_label.setStyleSheet("background-color: cornflowerblue;")
+        self.time_label.setFrameShape(QtWidgets.QFrame.WinPanel)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.time_label.setFont(font)
+        self.time_label.setText("День 1")
+        self.time_label.setObjectName("label")
 
         self.pushButton = QtWidgets.QPushButton(Dialog_mission_1)
         self.pushButton.setGeometry(QtCore.QRect(350, 580, 141, 141))
@@ -1754,13 +1892,14 @@ class Mission_1(object):
         font.setPointSize(20)
         self.label.setFont(font)
         self.label.setText("Test")
+        self.label.setAlignment(Qt.Qt.AlignCenter)
         self.label.setObjectName("label")
 
-        self.textEdit = QtWidgets.QTextEdit(Dialog_mission_1)
-        self.textEdit.setGeometry(QtCore.QRect(1110, 490, 611, 201))
-        self.textEdit.setStyleSheet("background-color: lightseagreen;")
-        self.textEdit.setFrameShape(QtWidgets.QFrame.WinPanel)
-        self.textEdit.setObjectName("textEdit")
+        self.label_2 = QtWidgets.QLabel(Dialog_mission_1)
+        self.label_2.setGeometry(QtCore.QRect(1110, 490, 611, 201))
+        self.label_2.setStyleSheet("background-color: lightseagreen;")
+        self.label_2.setFrameShape(QtWidgets.QFrame.WinPanel)
+        self.label_2.setObjectName("label_2")
 
         self.retranslateUi(Dialog_mission_1)  # Эта часть кода сгенерированна программой, вроде можно убрать, но страшно
         QtCore.QMetaObject.connectSlotsByName(Dialog_mission_1)
@@ -1778,6 +1917,7 @@ Dialog_Character_selection = QtWidgets.QDialog()  # Диалог выбора п
 Dialog_history_2 = QtWidgets.QDialog()  # Диалог чтения истории 2
 Dialog_history_3 = QtWidgets.QDialog()  # Диалог чтения истории 3
 Dialog_Item_distribution = QtWidgets.QDialog()  # Диалог выбора шмоток
+Dialog_leader_selection = QtWidgets.QDialog()  # Диалог выбора лидера
 
 menu = Menu()  # подключение меню
 menu.setupUi(Dialog_menu)
@@ -1799,6 +1939,9 @@ char_s.setupUi(Dialog_Character_selection)
 
 Idi = Item_distribution()  # Подключение раскидывания шмоток
 Idi.setupUi(Dialog_Item_distribution)
+
+Leader_s = Leader_selection()
+Leader_s.setupUi(Dialog_leader_selection)
 
 Dialog_Character_selection.show()  # Запуск вего этого дерьма
 
@@ -1827,25 +1970,79 @@ def to_create_team():
     Dialog_history_2.close()
     Dialog_Character_selection.open()
 
+
 def add_persons_to_list():
     for key in Persons.persons_in_team:
-        if Persons.persons_in_team[key] == True:
+        if Persons.persons_in_team[key]:
             Persons.persons_in_team_list.append(key)
     print(Persons.persons_in_team_list)
 
-def set_amount_of_advantures():
+
+def define_amount_of_actions_of_adventurers():
+    Persons.actions_of_adventurers_in_team_dict_for_restoring = {i: Persons.actions_of_adventurers[i] for i in
+                                                                 Persons.persons_in_team_list}
+
+def create_copy_for_usage():
+    Persons.actions_of_adventurers_in_team_dict_for_using = Persons.actions_of_adventurers_in_team_dict_for_restoring
+
+
+def subtract_value_from_actions_of_team(actions_lost):
+    Persons.actions_of_adventurers_in_team_dict_for_using = \
+        {i: Persons.actions_of_adventurers_in_team_dict_for_using[i] \
+            - actions_lost for i in Persons.actions_of_adventurers_in_team_dict_for_using}
+
+
+def subtract_value_from_actions_of_adventurer(name_of_adventurer, actions_of_adventurer):
+    Persons.actions_of_adventurers_in_team_dict_for_using[name_of_adventurer] = \
+        Persons.actions_of_adventurers_in_team_dict_for_using[name_of_adventurer] - actions_of_adventurer
+
+
+def define_amount_of_actions_of_team():
+    Persons.actions_of_team = min(Persons.actions_of_adventurers_in_team_dict_for_using.values())
+    return min(Persons.actions_of_adventurers_in_team_dict_for_using.values())
+
+def check_if_actions_less_than_0():
+    for adventurer in Persons.actions_of_adventurers_in_team_dict_for_using:
+        if Persons.actions_of_adventurers_in_team_dict_for_using[adventurer] < 0:
+            return True
+
+        return False
+
+def to_move(actions_lost):
+    save = Persons.actions_of_adventurers_in_team_dict_for_using          # Сохраним действия
+    subtract_value_from_actions_of_team(actions_lost)                     # Отнимим
+    if check_if_actions_less_than_0():                                    # Проверим не ушли ли дейсквия в минус
+        Persons.was_error = True                                          # Запомнить что была ошибка
+        Persons.actions_of_adventurers_in_team_dict_for_using = save      # Если да, то вернём всё на место
+        msgBox = QtWidgets.QMessageBox()                                  # И предупредим пользователя о нехватке
+        msgBox.setIcon(QtWidgets.QMessageBox.Warning)                     # действий
+        msgBox.setText("У одного или нескольких путешественников недостаточно действий")
+        msgBox.setWindowTitle("QMessageBox Example")
+        msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
+        returnValue2 = msgBox.exec()  # Если не сохранить в переменную то всё сломается
+
+def set_amount_of_adventures():
     print(len(Persons.persons_in_team_list))
     if len(Persons.persons_in_team_list) == 3:
         Persons.amount_of_adventurers = 3
         ui.pushButton_1_advaturer.show()
         ui.pushButton_2_advaturer.show()
         ui.pushButton_3_advaturer.show()
+        Leader_s.pushButton_1_advaturer.show()
+        Leader_s.pushButton_2_advaturer.show()
+        Leader_s.pushButton_3_advaturer.show()
+
     if len(Persons.persons_in_team_list) == 4:
         Persons.amount_of_adventurers = 4
         ui.pushButton_1_advaturer.show()
         ui.pushButton_2_advaturer.show()
         ui.pushButton_3_advaturer.show()
         ui.pushButton_4_advaturer.show()
+        Leader_s.pushButton_1_advaturer.show()
+        Leader_s.pushButton_2_advaturer.show()
+        Leader_s.pushButton_3_advaturer.show()
+        Leader_s.pushButton_4_advaturer.show()
+
     if len(Persons.persons_in_team_list) == 5:
         Persons.amount_of_adventurers = 5
         ui.pushButton_1_advaturer.show()
@@ -1853,74 +2050,126 @@ def set_amount_of_advantures():
         ui.pushButton_3_advaturer.show()
         ui.pushButton_4_advaturer.show()
         ui.pushButton_5_advaturer.show()
+        Leader_s.pushButton_1_advaturer.show()
+        Leader_s.pushButton_2_advaturer.show()
+        Leader_s.pushButton_3_advaturer.show()
+        Leader_s.pushButton_4_advaturer.show()
+        Leader_s.pushButton_5_advaturer.show()
+
+
+def to_renew_window_information():
+    if Persons.to_save_what_windows_were_shown == 1:
+        to_show_situation_1st_Advanturer()
+    if Persons.to_save_what_windows_were_shown == 2:
+        to_show_situation_2nd_Advanturer()
+    if Persons.to_save_what_windows_were_shown == 3:
+        to_show_situation_3rd_Advanturer()
+    if Persons.to_save_what_windows_were_shown == 4:
+        to_show_situation_4th_Advanturer()
+    if Persons.to_save_what_windows_were_shown == 5:
+        to_show_situation_5th_Advanturer()
+
 
 def set_three_coosen_adventurers():
     if Persons.persons_in_team_list[0] == "Нико Робин":
         ui.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Nico Robin face.png"))
+        Leader_s.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Nico Robin face.png"))
     if Persons.persons_in_team_list[0] == "Джим Киперс":
         ui.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Jim Kipers face.png"))
+        Leader_s.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Jim Kipers face.png"))
     if Persons.persons_in_team_list[0] == "Марко Волкодав":
         ui.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Marco - Volkodav face.png"))
+        Leader_s.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Marco - Volkodav face.png"))
     if Persons.persons_in_team_list[0] == "Кэри Кинг":
         ui.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Carry King face.png"))
+        Leader_s.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Carry King face.png"))
     if Persons.persons_in_team_list[0] == "Ангела":
         ui.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))
+        Leader_s.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))
     if Persons.persons_in_team_list[0] == "Ник Джеймс":
         ui.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Nick Gramzik Graims face.png"))
+        Leader_s.pushButton_1_advaturer.setIcon(QtGui.QIcon("Persons/Nick Gramzik Graims face.png"))
 
     if Persons.persons_in_team_list[1] == "Нико Робин":
         ui.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Nico Robin face.png"))
+        Leader_s.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Nico Robin face.png"))
     if Persons.persons_in_team_list[1] == "Джим Киперс":
         ui.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Jim Kipers face.png"))
+        Leader_s.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Jim Kipers face.png"))
     if Persons.persons_in_team_list[1] == "Марко Волкодав":
         ui.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Marco - Volkodav face.png"))
+        Leader_s.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Marco - Volkodav face.png"))
     if Persons.persons_in_team_list[1] == "Кэри Кинг":
         ui.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Carry King face.png"))
+        Leader_s.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Carry King face.png"))
     if Persons.persons_in_team_list[1] == "Ангела":
         ui.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))
+        Leader_s.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))
     if Persons.persons_in_team_list[1] == "Ник Джеймс":
         ui.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Nick Gramzik Graims face.png"))
+        Leader_s.pushButton_2_advaturer.setIcon(QtGui.QIcon("Persons/Nick Gramzik Graims face.png"))
 
     if Persons.persons_in_team_list[2] == "Нико Робин":
         ui.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Nico Robin face.png"))
+        Leader_s.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Nico Robin face.png"))
     if Persons.persons_in_team_list[2] == "Джим Киперс":
         ui.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Jim Kipers face.png"))
+        Leader_s.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Jim Kipers face.png"))
     if Persons.persons_in_team_list[2] == "Марко Волкодав":
         ui.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Marco - Volkodav face.png"))
+        Leader_s.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Marco - Volkodav face.png"))
     if Persons.persons_in_team_list[2] == "Кэри Кинг":
         ui.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Carry King face.png"))
+        Leader_s.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Carry King face.png"))
     if Persons.persons_in_team_list[2] == "Ангела":
         ui.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))
+        Leader_s.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))
     if Persons.persons_in_team_list[2] == "Ник Джеймс":
         ui.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Nick Gramzik Graims face.png"))
+        Leader_s.pushButton_3_advaturer.setIcon(QtGui.QIcon("Persons/Nick Gramzik Graims face.png"))
+
 
 def set_4th_coosen_adventurers():
     if Persons.persons_in_team_list[3] == "Нико Робин":
         ui.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Nico Robin face.png"))
+        Leader_s.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Nico Robin face.png"))
     if Persons.persons_in_team_list[3] == "Джим Киперс":
         ui.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Jim Kipers face.png"))
+        Leader_s.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Jim Kipers face.png"))
     if Persons.persons_in_team_list[3] == "Марко Волкодав":
         ui.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Marco - Volkodav face.png"))
+        Leader_s.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Marco - Volkodav face.png"))
     if Persons.persons_in_team_list[3] == "Кэри Кинг":
         ui.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Carry King face.png"))
+        Leader_s.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Carry King face.png"))
     if Persons.persons_in_team_list[3] == "Ангела":
         ui.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))
+        Leader_s.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))
     if Persons.persons_in_team_list[3] == "Ник Джеймс":
         ui.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Nick Gramzik Graims face.png"))
+        Leader_s.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Nick Gramzik Graims face.png"))
+
 
 def set_5th_coosen_adventurers():
     if Persons.persons_in_team_list[4] == "Нико Робин":
         ui.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Nico Robin face.png"))
+        Leader_s.pushButton_4_advaturer.setIcon(QtGui.QIcon("Persons/Nico Robin face.png"))
     if Persons.persons_in_team_list[4] == "Джим Киперс":
         ui.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Jim Kipers face.png"))
+        Leader_s.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Jim Kipers face.png"))
     if Persons.persons_in_team_list[4] == "Марко Волкодав":
         ui.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Marco - Volkodav face.png"))
+        Leader_s.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Marco - Volkodav face.png"))
     if Persons.persons_in_team_list[4] == "Кэри Кинг":
         ui.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Carry King face.png"))
+        Leader_s.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Carry King face.png"))
     if Persons.persons_in_team_list[4] == "Ангела":
         ui.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))
+        Leader_s.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Angela face.png"))
     if Persons.persons_in_team_list[4] == "Ник Джеймс":
         ui.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Nick Gramzik Graims face.png"))
+        Leader_s.pushButton_5_advaturer.setIcon(QtGui.QIcon("Persons/Nick Gramzik Graims face.png"))
+
 
 def set_faces_of_adventurers():
     if Persons.amount_of_adventurers == 3:
@@ -1934,27 +2183,68 @@ def set_faces_of_adventurers():
         set_5th_coosen_adventurers()
 
 
-
 def to_mission1():
-    Dialog_history_3.close()
-    add_persons_to_list()
-    set_amount_of_advantures()
-    set_faces_of_adventurers()
-    Dialog_mission_1.open()
+    if Persons.leader_of_expedition == None:
+        msgBox = QtWidgets.QMessageBox()
+        msgBox.setIcon(QtWidgets.QMessageBox.Warning)
+        msgBox.setText("Вы не выбрали лидера")
+        msgBox.setWindowTitle("QMessageBox Example")
+        msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
 
+        returnValue1 = msgBox.exec()  # Если не сохранить в переменную то всё сломается
+
+    else:
+        to_show_situation_1st_Advanturer()
+        print(Persons.leader_of_expedition)
+        Dialog_leader_selection.close()
+        Dialog_mission_1.open()
 
 
 class Persons:
+    was_error = False
+    terrain = None
+    terrain_position = 0
+
+    the_day_of_expedition = 1
+
+    to_save_what_windows_were_shown = None
+
     persons_in_team = {"Нико Робин": True,
-                                   "Джим Киперс": True,
-                                   "Марко Волкодав": True,
-                                   "Кэри Кинг": True,
-                                   "Ангела": True,
-                                   "Ник Джеймс": True}
+                       "Джим Киперс": True,
+                       "Марко Волкодав": True,
+                       "Кэри Кинг": True,
+                       "Ангела": True,
+                       "Ник Джеймс": True}
+
+    actions_of_adventurers = {"Нико Робин": 5,
+                              "Джим Киперс": 5,
+                              "Марко Волкодав": 6,
+                              "Кэри Кинг": 5,
+                              "Ангела": 5,
+                              "Ник Джеймс": 4}
+
+    actions_of_adventurers_in_team_dict_for_restoring = {}
+
+    actions_of_adventurers_in_team_dict_for_using = {}
+
+    actions_of_team = None
 
     persons_in_team_list = []
 
+    leader_of_expedition = None
+
     amount_of_adventurers = 0
+
+    actions_of_adventurers_last = None
+
+    actions_of_team_lasts = None
+
+    nico_parameter_string = string = "Параметры:\nСила - 2, Выносливость - 2, Акробатика - 3, Внимательность - 3, Навигация - 2, Самообладание - 3\n\nВ рюкзаке:\n"
+    jim_parameter_string = string = "Параметры:\nСила - 3, Выносливость - 2, Акробатика - 2, Внимательность - 2, Навигация - 3, Самообладание - 3\n\nВ рюкзаке:\n"
+    marco_parameter_string = string = "Параметры:\nСила - 3, Выносливость - 3, Акробатика - 1, Внимательность - 3, Навигация - 2, Самообладание - 2\n\nВ рюкзаке:\n"
+    carry_parameter_string = string = "Параметры:\nСила - 4, Выносливость - 2, Акробатика - 1, Внимательность - 3, Навигация - 2, Самообладание - 3\n\nВ рюкзаке:\n"
+    angela_parameter_string = string = "Параметры:\nСила - 1, Выносливость - 2, Акробатика - 3, Внимательность - 4, Навигация - 4, Самообладание - 2\n\nВ рюкзаке:\n"
+    nick_parameter_string = string = "Параметры:\nСила - 3, Выносливость - 1, Акробатика - 2, Внимательность - 3, Навигация - 1, Самообладание - 4\n\nВ рюкзаке:\n"
 
     @staticmethod
     def to_save_persons_in_team():
@@ -1999,7 +2289,6 @@ class Persons:
                     Idi.Nick_progress6.hide()
                     Idi.Nick_bag_label.hide()
 
-
     @staticmethod
     def turn_on_comboboxes():
         taken_persons = {"Выберите": True}
@@ -2030,9 +2319,6 @@ class Persons:
         Idi.trevelling_set_combobox.addItems(taken_persons)
         Idi.flare_combobox.addItems(taken_persons)
 
-
-
-
     @staticmethod
     def to_check_correct_number_of_persons_and_if_correct_go_further():
         if Persons.to_count_persons_in_team() < 6 and Persons.to_count_persons_in_team() > 2:
@@ -2048,254 +2334,433 @@ class Persons:
             returnValue = msgBox.exec()  # Если не сохранить в переменную то всё сломается
 
 
-
-def take_items():       # Переход на распределение предметов
+def take_items():  # Переход на распределение предметов
     Persons.to_save_persons_in_team()
     Persons.turn_on_comboboxes()
     Persons.to_turn_off_not_taken_adventurers()
     Persons.to_check_correct_number_of_persons_and_if_correct_go_further()
 
 
-def distribute_items():
+def distribute_items_to_history3():
+    add_persons_to_list()
+    define_amount_of_actions_of_adventurers()
+    create_copy_for_usage()
+    define_amount_of_actions_of_team()
+    set_amount_of_adventures()
+    set_faces_of_adventurers()
     if (int(((sum(Item_distribution.Nico_Robin_bag.values())) * 100) / 7) > 100 or
-            int(((sum(Item_distribution.Jim_Kippers_bag.values()))*100)/8) > 100 or
-            int(((sum(Item_distribution.Marco_Wolfhound_bag.values()))*100)/8) > 100 or
+            int(((sum(Item_distribution.Jim_Kippers_bag.values())) * 100) / 8) > 100 or
+            int(((sum(Item_distribution.Marco_Wolfhound_bag.values())) * 100) / 8) > 100 or
             int(((sum(Item_distribution.Carry_King_bag.values())) * 100) / 9) > 100 or
             int(((sum(Item_distribution.Angela_bag.values())) * 100) / 6) > 100 or
             int(((sum(Item_distribution.Nick_James_bag.values())) * 100) / 8) > 100):
 
-                msgBox = QtWidgets.QMessageBox()
-                msgBox.setIcon(QtWidgets.QMessageBox.Warning)
-                msgBox.setText("Устраните перегрузку")
-                msgBox.setWindowTitle("Предупреждение")
-                msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
-                returnValue = msgBox.exec()  # Если не сохранить в переменную то всё сломается
+        msgBox = QtWidgets.QMessageBox()
+        msgBox.setIcon(QtWidgets.QMessageBox.Warning)
+        msgBox.setText("Устраните перегрузку")
+        msgBox.setWindowTitle("Предупреждение")
+        msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
+        returnValue = msgBox.exec()  # Если не сохранить в переменную то всё сломается
     else:
         Dialog_Item_distribution.close()
         Dialog_history_3.show()  # Пока так потом переделаю
 
 
+def to_leader_selection():
+    Dialog_history_3.close()
+    Dialog_leader_selection.open()
+
+
 menu.pushButton.clicked.connect(start_history)
 history.pushButton.clicked.connect(to_history2)
 history_2.pushButton.clicked.connect(to_create_team)  # Пока так
-history_3.pushButton.clicked.connect(to_mission1)
+history_3.pushButton.clicked.connect(to_leader_selection)
 char_s.pushButton.clicked.connect(take_items)
-Idi.pushButton.clicked.connect(distribute_items)
+Idi.pushButton.clicked.connect(distribute_items_to_history3)
+Leader_s.pushButton_dalee.clicked.connect(to_mission1)
 
 
 def night():
-    if position == "В равнинах":
+    if Persons.terrain == "В равнинах":
         plane_night()
-    elif position == "В пустынях":
+    elif Persons.terrain == "В пустынях":
         desert_night()
-    elif position == "В джунглях":
+    elif Persons.terrain == "В джунглях":
         jungle_night()
-    elif position == "В горах":
+    elif Persons.terrain == "В горах":
         mount_night()
-
-
-position = "На Корабле"
-
-
-def plane():
-    global position
-    position = "В равнинах"
-    ui.label.setText(random_plane_event())
+    Persons.actions_of_adventurers_in_team_dict_for_using = Persons.actions_of_adventurers_in_team_dict_for_restoring
+    to_renew_window_information()
+    Persons.the_day_of_expedition += 1
+    ui.time_label.setText("День " + str(Persons.the_day_of_expedition))
+    if Persons.the_day_of_expedition >= 7:
+        ui.pushButton_ship.show()
 
 
 def plane_night():
-    global position
-    position = "В равнинах"
     ui.label.setText(random_night_plane_event())
 
 
-def desert():
-    global position
-    position = "В пустынях"
-    ui.label.setText(random_desert_event())
-
-
 def desert_night():
-    global position
-    position = "В пустынях"
     ui.label.setText(random_night_desert_event())
 
 
-def jungle():
-    global position
-    position = "В джунглях"
-    ui.label.setText(random_jungle_event())
-
-
 def jungle_night():
-    global position
-    position = "В джунглях"
     ui.label.setText(random_night_jungle_event())
 
+def no_way():
+    msgBox = QtWidgets.QMessageBox()
+    msgBox.setIcon(QtWidgets.QMessageBox.Warning)
+    msgBox.setText("Здесь не пройти")
+    msgBox.setWindowTitle("Предупреждение")
+    msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
+    returnValue4 = msgBox.exec()  # Если не сохранить в переменную то всё сломается
+
+def go_if_not_error():
+    if Persons.was_error == True:
+        Persons.was_error = False
+        return False
+    else:
+        return True
 
 def mount15():
-    global position
-    position = "В горах"
-    ui.pushButton_15.setIcon(QtGui.QIcon("15 а.png"))
-    if Random_aim == 1:
-        ui.label.setText("Вы у цели")
-    else:
-        ui.label.setText(random_mount_event())
-
-    disable_all_terrytory_buttons()
-    ui.pushButton_13.setEnabled(True)
+    to_move(4)
+    if go_if_not_error():
+        
+        Persons.terrain_position = 15
+        Persons.terrain = "В горах"
+        ui.pushButton_15.setIcon(QtGui.QIcon("15 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_13.setEnabled(True)
+        to_renew_window_information()
 
 
 def mount14():
-    global position
-    position = "В горах"
-    ui.pushButton_14.setIcon(QtGui.QIcon("14 а.png"))
-    if Random_aim == 2:
-        ui.label.setText("Вы у цели")
-    else:
-        ui.label.setText(random_mount_event())
-
-    disable_all_terrytory_buttons()
-    ui.pushButton_9.setEnabled(True)
-    ui.pushButton_11.setEnabled(True)
+    if Persons.terrain_position == 9:
+        to_move(4)
+    if Persons.terrain_position == 11:
+        to_move(3)
+    if go_if_not_error():
+        
+        Persons.terrain_position = 12
+        Persons.terrain = "В горах"
+        ui.pushButton_14.setIcon(QtGui.QIcon("14 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_9.setEnabled(True)
+        ui.pushButton_11.setEnabled(True)
+        to_renew_window_information()
 
 
 def mount12():
-    global position
-    position = "В горах"
-    ui.pushButton_12.setIcon(QtGui.QIcon("12 а.png"))
-    if Random_aim == 3:
-        ui.label.setText("Вы у цели")
-    else:
-        ui.label.setText(random_mount_event())
-
-    disable_all_terrytory_buttons()
-    ui.pushButton_7.setEnabled(True)
-    ui.pushButton_10.setEnabled(True)
+    if Persons.terrain_position == 7:
+        to_move(3)
+    if Persons.terrain_position == 10:
+        to_move(2)
+    if go_if_not_error():
+        
+        Persons.terrain_position = 12
+        Persons.terrain = "В горах"
+        ui.pushButton_12.setIcon(QtGui.QIcon("12 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_7.setEnabled(True)
+        ui.pushButton_10.setEnabled(True)
+        to_renew_window_information()
 
 
 def mount_night():
-    global position
-    position = "В горах"
     ui.label.setText(random_night_mount_event())
 
 
-# print(position)
-
-
 def jungle13():
-    ui.pushButton_13.setIcon(QtGui.QIcon("13 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton_8.setEnabled(True)
-    ui.pushButton_10.setEnabled(True)
-    ui.pushButton_11.setEnabled(True)
-    ui.pushButton_15.setEnabled(True)
-    ui.pushButton_8.setEnabled(True)
+    if Persons.terrain_position == 8:
+        no_way()
+        return
+    if Persons.terrain_position == 9:
+        to_move(2)
+    if Persons.terrain_position == 11:
+        to_move(3)
+    if Persons.terrain_position == 15:
+        to_move(3)
+    if go_if_not_error():
+        
+        Persons.terrain_position = 13
+        Persons.terrain = "В джунглях"
+        ui.pushButton_13.setIcon(QtGui.QIcon("13 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_8.setEnabled(True)
+        ui.pushButton_10.setEnabled(True)
+        ui.pushButton_11.setEnabled(True)
+        ui.pushButton_15.setEnabled(True)
+        ui.pushButton_8.setEnabled(True)
+        to_renew_window_information()
 
 
 def jungle7():
-    ui.pushButton_7.setIcon(QtGui.QIcon("7 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton_5.setEnabled(True)
-    ui.pushButton_10.setEnabled(True)
-    ui.pushButton_12.setEnabled(True)
+    if Persons.terrain_position == 5:
+        to_move(4)
+    if Persons.terrain_position == 10:
+        to_move(2)
+    if Persons.terrain_position == 12:
+        to_move(3)
+    if go_if_not_error():
+        
+        Persons.terrain_position = 7
+        Persons.terrain = "В джунглях"
+        ui.pushButton_7.setIcon(QtGui.QIcon("7 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_5.setEnabled(True)
+        ui.pushButton_10.setEnabled(True)
+        ui.pushButton_12.setEnabled(True)
+        to_renew_window_information()
 
 
 def jungle9():
-    ui.pushButton_9.setIcon(QtGui.QIcon("9 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton_6.setEnabled(True)
-    ui.pushButton_11.setEnabled(True)
-    ui.pushButton_14.setEnabled(True)
+    if Persons.terrain_position == 6:
+        to_move(4)
+    if Persons.terrain_position == 11:
+        to_move(1)
+    if Persons.terrain_position == 14:
+        to_move(1)
+    if go_if_not_error():
+        
+        Persons.terrain_position = 9
+        Persons.terrain = "В джунглях"
+        ui.pushButton_9.setIcon(QtGui.QIcon("9 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_6.setEnabled(True)
+        ui.pushButton_11.setEnabled(True)
+        ui.pushButton_14.setEnabled(True)
+        to_renew_window_information()
 
 
 def jungle5():
-    ui.pushButton_5.setIcon(QtGui.QIcon("5 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton_2.setEnabled(True)
-    ui.pushButton_4.setEnabled(True)
-    ui.pushButton_7.setEnabled(True)
-    ui.pushButton_8.setEnabled(True)
-    ui.pushButton_10.setEnabled(True)
+    if Persons.terrain_position == 2:
+        to_move(2)
+    if Persons.terrain_position == 4:
+        to_move(4)
+    if Persons.terrain_position == 7:
+        no_way()
+        return
+    if Persons.terrain_position == 8:
+        to_move(3)
+    if Persons.terrain_position == 10:
+        to_move(3)
+    if go_if_not_error():
+        
+        Persons.terrain_position = 5
+        Persons.terrain = "В джунглях"
+        ui.pushButton_5.setIcon(QtGui.QIcon("5 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_2.setEnabled(True)
+        ui.pushButton_4.setEnabled(True)
+        ui.pushButton_7.setEnabled(True)
+        ui.pushButton_8.setEnabled(True)
+        ui.pushButton_10.setEnabled(True)
+        to_renew_window_information()
 
 
 def jungle6():
-    ui.pushButton_6.setIcon(QtGui.QIcon("6 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton_3.setEnabled(True)
-    ui.pushButton_4.setEnabled(True)
-    ui.pushButton_8.setEnabled(True)
-    ui.pushButton_9.setEnabled(True)
-    ui.pushButton_11.setEnabled(True)
+    if Persons.terrain_position == 3:
+        to_move(3)
+    if Persons.terrain_position == 4:
+        to_move(4)
+    if Persons.terrain_position == 8:
+        to_move(4)
+    if Persons.terrain_position == 9:
+        to_move(2)
+    if Persons.terrain_position == 11:
+        to_move(3)
+    if go_if_not_error():
+        
+        Persons.terrain_position = 6
+        Persons.terrain = "В джунглях"
+        ui.pushButton_6.setIcon(QtGui.QIcon("6 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_3.setEnabled(True)
+        ui.pushButton_4.setEnabled(True)
+        ui.pushButton_8.setEnabled(True)
+        ui.pushButton_9.setEnabled(True)
+        ui.pushButton_11.setEnabled(True)
+        to_renew_window_information()
 
 
 def desert10():
-    ui.pushButton_10.setIcon(QtGui.QIcon("10 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton_5.setEnabled(True)
-    ui.pushButton_7.setEnabled(True)
-    ui.pushButton_8.setEnabled(True)
-    ui.pushButton_12.setEnabled(True)
-    ui.pushButton_13.setEnabled(True)
+    if Persons.terrain_position == 5:
+        to_move(2)
+    if Persons.terrain_position == 7:
+        no_way()
+        return
+    if Persons.terrain_position == 8:
+        to_move(2)
+    if Persons.terrain_position == 12:
+        to_move(1)
+    if Persons.terrain_position == 13:
+        to_move(1)
+    if go_if_not_error():
+        
+        Persons.terrain_position = 10
+        Persons.terrain = "В пустынях"
+        ui.pushButton_10.setIcon(QtGui.QIcon("10 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_5.setEnabled(True)
+        ui.pushButton_7.setEnabled(True)
+        ui.pushButton_8.setEnabled(True)
+        ui.pushButton_12.setEnabled(True)
+        ui.pushButton_13.setEnabled(True)
+        to_renew_window_information()
 
 
 def desert11():
-    ui.pushButton_11.setIcon(QtGui.QIcon("11 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton_6.setEnabled(True)
-    ui.pushButton_8.setEnabled(True)
-    ui.pushButton_9.setEnabled(True)
-    ui.pushButton_13.setEnabled(True)
-    ui.pushButton_14.setEnabled(True)
+    if Persons.terrain_position == 6:
+        to_move(2)
+    if Persons.terrain_position == 8:
+        no_way()
+        return
+    if Persons.terrain_position == 9:
+        to_move(2)
+    if Persons.terrain_position == 13:
+        to_move(1)
+    if Persons.terrain_position == 14:
+        to_move(3)
+    if go_if_not_error():
+        
+        Persons.terrain_position = 11
+        Persons.terrain = "В пустынях"
+        ui.pushButton_11.setIcon(QtGui.QIcon("11 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_6.setEnabled(True)
+        ui.pushButton_8.setEnabled(True)
+        ui.pushButton_9.setEnabled(True)
+        ui.pushButton_13.setEnabled(True)
+        ui.pushButton_14.setEnabled(True)
+        to_renew_window_information()
 
 
 def desert4():
-    ui.pushButton_4.setIcon(QtGui.QIcon("4 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton.setEnabled(True)
-    ui.pushButton_2.setEnabled(True)
-    ui.pushButton_3.setEnabled(True)
-    ui.pushButton_5.setEnabled(True)
-    ui.pushButton_6.setEnabled(True)
-    ui.pushButton_8.setEnabled(True)
+    if Persons.terrain_position == 1:
+        to_move(1)
+    if Persons.terrain_position == 2:
+        to_move(1)
+    if Persons.terrain_position == 3:
+        to_move(1)
+    if Persons.terrain_position == 5:
+        to_move(1)
+    if Persons.terrain_position == 6:
+        to_move(1)
+    if Persons.terrain_position == 8:
+        no_way()
+    if go_if_not_error():
+
+        Persons.terrain_position = 4
+        Persons.terrain = "В пустынях"
+        ui.pushButton_4.setIcon(QtGui.QIcon("4 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton.setEnabled(True)
+        ui.pushButton_2.setEnabled(True)
+        ui.pushButton_3.setEnabled(True)
+        ui.pushButton_5.setEnabled(True)
+        ui.pushButton_6.setEnabled(True)
+        ui.pushButton_8.setEnabled(True)
+        to_renew_window_information()
 
 
 def plane8():
-    ui.pushButton_8.setIcon(QtGui.QIcon("8 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton_4.setEnabled(True)
-    ui.pushButton_5.setEnabled(True)
-    ui.pushButton_6.setEnabled(True)
-    ui.pushButton_10.setEnabled(True)
-    ui.pushButton_11.setEnabled(True)
-    ui.pushButton_13.setEnabled(True)
+    if Persons.terrain_position == 4:
+        to_move(2)
+    if Persons.terrain_position == 5:
+        to_move(2)
+    if Persons.terrain_position == 6:
+        to_move(2)
+    if Persons.terrain_position == 10:
+        to_move(3)
+    if Persons.terrain_position == 11:
+        to_move(2)
+    if Persons.terrain_position == 13:
+        to_move(3)
+    if go_if_not_error():
+
+        Persons.terrain_position = 8
+        Persons.terrain = "В равнинах"
+        ui.pushButton_8.setIcon(QtGui.QIcon("8 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_4.setEnabled(True)
+        ui.pushButton_5.setEnabled(True)
+        ui.pushButton_6.setEnabled(True)
+        ui.pushButton_10.setEnabled(True)
+        ui.pushButton_11.setEnabled(True)
+        ui.pushButton_13.setEnabled(True)
+        to_renew_window_information()
 
 
 def plane2():
-    ui.pushButton_2.setIcon(QtGui.QIcon("2 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton.setEnabled(True)
-    ui.pushButton_4.setEnabled(True)
-    ui.pushButton_5.setEnabled(True)
+    if Persons.terrain_position == 1:
+        to_move(2)
+    if Persons.terrain_position == 4:
+        to_move(2)
+    if Persons.terrain_position == 5:
+        to_move(2)
+    if go_if_not_error():
+
+        Persons.terrain_position = 2
+        Persons.terrain = "В равнинах"
+        ui.pushButton_2.setIcon(QtGui.QIcon("2 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton.setEnabled(True)
+        ui.pushButton_4.setEnabled(True)
+        ui.pushButton_5.setEnabled(True)
+        to_renew_window_information()
 
 
 def plane3():
-    ui.pushButton_3.setIcon(QtGui.QIcon("3 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton.setEnabled(True)
-    ui.pushButton_4.setEnabled(True)
-    ui.pushButton_6.setEnabled(True)
+    if Persons.terrain_position == 1:
+        to_move(2)
+    if Persons.terrain_position == 4:
+        to_move(1)
+    if Persons.terrain_position == 6:
+        to_move(2)
+    if go_if_not_error():
+
+        Persons.terrain_position = 3
+        Persons.terrain = "В равнинах"
+        ui.pushButton_3.setIcon(QtGui.QIcon("3 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton.setEnabled(True)
+        ui.pushButton_4.setEnabled(True)
+        ui.pushButton_6.setEnabled(True)
+        to_renew_window_information()
+
 
 def plane1():
-    ui.pushButton.setIcon(QtGui.QIcon("1 а.png"))
-    disable_all_terrytory_buttons()
-    ui.pushButton_ship.hide()
-    ui.pushButton_2.setEnabled(True)
-    ui.pushButton_3.setEnabled(True)
-    ui.pushButton_4.setEnabled(True)
+    if Persons.terrain_position == 0:
+        to_move(1)
+    if Persons.terrain_position == 2:
+        to_move(2)
+    if Persons.terrain_position == 3:
+        to_move(2)
+    if Persons.terrain_position == 4:
+        to_move(3)
+    if go_if_not_error():
+
+        Persons.terrain_position = 1
+        Persons.terrain = "В равнинах"
+        ui.pushButton.setIcon(QtGui.QIcon("1 а.png"))
+        disable_all_terrytory_buttons()
+        ui.pushButton_ship.hide()
+        ui.pushButton_2.setEnabled(True)
+        ui.pushButton_3.setEnabled(True)
+        ui.pushButton_4.setEnabled(True)
+        to_renew_window_information()
+
+
+def ship():
+    to_move(1)
+    to_renew_window_information()
+    Persons.terrain_position = 1
+    Persons.terrain = "На корабле"
 
 def research():  # ИССЛЕДОВАНИЕ
     pass
+
 
 def disable_all_terrytory_buttons():
     ui.pushButton.setEnabled(False)
@@ -2315,35 +2780,324 @@ def disable_all_terrytory_buttons():
     ui.pushButton_15.setEnabled(False)
 
 
-ui.pushButton.clicked.connect(plane)
+def to_show_situation_1st_Advanturer():
+    Persons.to_save_what_windows_were_shown = 1
+    string = "Лидер экспедиции - " + Persons.leader_of_expedition + "\n"
+    string = string + "Действий у команды осталось " + f"{define_amount_of_actions_of_team()}\n"
+    if Persons.persons_in_team_list[0] == "Нико Робин":
+        string = string + "Действий у Нико Робин осталось " + str(Persons.actions_of_adventurers_in_team_dict_for_using["Нико Робин"]) + "\n"
+        string = string + Persons.nico_parameter_string
+        for key, items in Item_distribution.Nico_Robin_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[0] == "Джим Киперс":
+        string = string + "Действий у Джим Киперс осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Джим Киперс"]) + "\n"
+        string = string + Persons.jim_parameter_string
+        for key, items in Item_distribution.Jim_Kippers_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[0] == "Марко Волкодав":
+        string = string + "Действий у Марко Волкодав осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Марко Волкодав"]) + "\n"
+        string = string + Persons.marco_parameter_string
+        for key, items in Item_distribution.Marco_Wolfhound_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[0] == "Кэри Кинг":
+        string = string + "Действий у Кэри Кинг осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Кэри Кинг"]) + "\n"
+        string = string + Persons.carry_parameter_string
+        for key, items in Item_distribution.Carry_King_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[0] == "Ангела":
+        string = string + "Действий у Ангела осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Ангела"]) + "\n"
+        string = string + Persons.angela_parameter_string
+        for key, items in Item_distribution.Angela_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[0] == "Ник Джеймс":
+        string = string + "Действий у Ник Джеймс осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Ник Джеймс"]) + "\n"
+        string = string + Persons.nick_parameter_string
+        for key, items in Item_distribution.Nick_James_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+
+def to_show_situation_2nd_Advanturer():
+    Persons.to_save_what_windows_were_shown = 2
+    string = "Лидер экспедиции - " + Persons.leader_of_expedition + "\n"
+    string = string + "Действий у команды осталось " + f"{define_amount_of_actions_of_team()}\n"
+    if Persons.persons_in_team_list[1] == "Нико Робин":
+        string = string + "Действий у Нико Робин осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Нико Робин"]) + "\n"
+        string = string + Persons.nico_parameter_string
+        for key, items in Item_distribution.Nico_Robin_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[1] == "Джим Киперс":
+        string = string + "Действий у Джим Киперс осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Джим Киперс"]) + "\n"
+        string = string + Persons.jim_parameter_string
+        for key, items in Item_distribution.Jim_Kippers_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[1] == "Марко Волкодав":
+        string = string + "Действий у Марко Волкодав осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Марко Волкодав"]) + "\n"
+        string = string + Persons.marco_parameter_string
+        for key, items in Item_distribution.Marco_Wolfhound_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[1] == "Кэри Кинг":
+        string = string + "Действий у Кэри Кинг осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Кэри Кинг"]) + "\n"
+        string = string + Persons.carry_parameter_string
+        for key, items in Item_distribution.Carry_King_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[1] == "Ангела":
+        string = string + "Действий у Ангела осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Ангела"]) + "\n"
+        string = string + Persons.angela_parameter_string
+        for key, items in Item_distribution.Angela_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[1] == "Ник Джеймс":
+        string = string + "Действий у Ник Джеймс осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Ник Джеймс"]) + "\n"
+        string = string + Persons.nick_parameter_string
+        for key, items in Item_distribution.Nick_James_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+
+def to_show_situation_3rd_Advanturer():
+    Persons.to_save_what_windows_were_shown = 3
+    string = "Лидер экспедиции - " + Persons.leader_of_expedition + "\n"
+    string = string + "Действий у команды осталось " + f"{define_amount_of_actions_of_team()}\n"
+    if Persons.persons_in_team_list[2] == "Нико Робин":
+        string = string + "Действий у Нико Робин осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Нико Робин"]) + "\n"
+        string = string + Persons.nico_parameter_string
+        for key, items in Item_distribution.Nico_Robin_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[2] == "Джим Киперс":
+        string = string + "Действий у Джим Киперс осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Джим Киперс"]) + "\n"
+        string = string + Persons.jim_parameter_string
+        for key, items in Item_distribution.Jim_Kippers_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[2] == "Марко Волкодав":
+        string = string + "Действий у Марко Волкодав осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Марко Волкодав"]) + "\n"
+        string = string + Persons.marco_parameter_string
+        for key, items in Item_distribution.Marco_Wolfhound_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[2] == "Кэри Кинг":
+        string = string + "Действий у Кэри Кинг осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Кэри Кинг"]) + "\n"
+        string = string + Persons.carry_parameter_string
+        for key, items in Item_distribution.Carry_King_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[2] == "Ангела":
+        string = string + "Действий у Ангела осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Ангела"]) + "\n"
+        string = string + Persons.angela_parameter_string
+        for key, items in Item_distribution.Angela_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[2] == "Ник Джеймс":
+        string = string + "Действий у Ник Джеймс осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Ник Джеймс"]) + "\n"
+        string = string + Persons.nick_parameter_string
+        for key, items in Item_distribution.Nick_James_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+
+def to_show_situation_4th_Advanturer():
+    Persons.to_save_what_windows_were_shown = 4
+    string = "Лидер экспедиции - " + Persons.leader_of_expedition + "\n"
+    string = string + "Действий у команды осталось " + f"{define_amount_of_actions_of_team()}\n"
+    if Persons.persons_in_team_list[3] == "Нико Робин":
+        string = string + "Действий у Нико Робин осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Нико Робин"]) + "\n"
+        string = string + Persons.nico_parameter_string
+        for key, items in Item_distribution.Nico_Robin_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[3] == "Джим Киперс":
+        string = string + "Действий у Джим Киперс осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Джим Киперс"]) + "\n"
+        string = string + Persons.jim_parameter_string
+        for key, items in Item_distribution.Jim_Kippers_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[3] == "Марко Волкодав":
+        string = string + "Действий у Марко Волкодав осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Марко Волкодав"]) + "\n"
+        string = string + Persons.marco_parameter_string
+        for key, items in Item_distribution.Marco_Wolfhound_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[3] == "Кэри Кинг":
+        string = string + "Действий у Кэри Кинг осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Кэри Кинг"]) + "\n"
+        string = string + Persons.carry_parameter_string
+        for key, items in Item_distribution.Carry_King_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[3] == "Ангела":
+        string = string + "Действий у Ангела осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Ангела"]) + "\n"
+        string = string + Persons.angela_parameter_string
+        for key, items in Item_distribution.Angela_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[3] == "Ник Джеймс":
+        string = string + "Действий у Ник Джеймс осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Ник Джеймс"]) + "\n"
+        string = string + Persons.nick_parameter_string
+        for key, items in Item_distribution.Nick_James_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+
+def to_show_situation_5th_Advanturer():
+    Persons.to_save_what_windows_were_shown = 5
+    string = "Лидер экспедиции - " + Persons.leader_of_expedition + "\n"
+    string = string + "Действий у команды осталось " + f"{define_amount_of_actions_of_team()}\n"
+    if Persons.persons_in_team_list[4] == "Нико Робин":
+        string = string + "Действий у Нико Робин осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Нико Робин"]) + "\n"
+        string = string + Persons.nico_parameter_string
+        for key, items in Item_distribution.Nico_Robin_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[4] == "Джим Киперс":
+        string = string + "Действий у Джим Киперс осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Джим Киперс"]) + "\n"
+        string = string + Persons.jim_parameter_string
+        for key, items in Item_distribution.Jim_Kippers_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[4] == "Марко Волкодав":
+        string = string + "Действий у Марко Волкодав осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Марко Волкодав"]) + "\n"
+        string = string + Persons.marco_parameter_string
+        for key, items in Item_distribution.Marco_Wolfhound_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[4] == "Кэри Кинг":
+        string = string + "Действий у Кэри Кинг осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Кэри Кинг"]) + "\n"
+        string = string + Persons.carry_parameter_string
+        for key, items in Item_distribution.Carry_King_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[4] == "Ангела":
+        string = string + "Действий у Ангела осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Ангела"]) + "\n"
+        string = string + Persons.angela_parameter_string
+        for key, items in Item_distribution.Angela_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+    if Persons.persons_in_team_list[4] == "Ник Джеймс":
+        string = string + "Действий у Ник Джеймс осталось " + str(
+            Persons.actions_of_adventurers_in_team_dict_for_using["Ник Джеймс"]) + "\n"
+        string = string + Persons.nick_parameter_string
+        for key, items in Item_distribution.Nick_James_bag.items():
+            string = string + str(key) + " - " + str(items) + " кг \n"
+        ui.label_2.setText(string)
+
+
+def to_choose_1st_advaturer_as_leader():
+    Persons.leader_of_expedition = Persons.persons_in_team_list[0]
+    Leader_s.Notification_label2.setText(f"Вы выбрали {Persons.persons_in_team_list[0]}.")
+
+
+def to_choose_2nd_advaturer_as_leader():
+    Persons.leader_of_expedition = Persons.persons_in_team_list[1]
+    Leader_s.Notification_label2.setText(f"Вы выбрали {Persons.persons_in_team_list[1]}.")
+
+
+def to_choose_3rd_advaturer_as_leader():
+    Persons.leader_of_expedition = Persons.persons_in_team_list[2]
+    Leader_s.Notification_label2.setText(f"Вы выбрали {Persons.persons_in_team_list[2]}.")
+
+
+def to_choose_4th_advaturer_as_leader():
+    Persons.leader_of_expedition = Persons.persons_in_team_list[3]
+    Leader_s.Notification_label2.setText(f"Вы выбрали {Persons.persons_in_team_list[3]}.")
+
+
+def to_choose_5th_advaturer_as_leader():
+    Persons.leader_of_expedition = Persons.persons_in_team_list[4]
+    Leader_s.Notification_label2.setText(f"Вы выбрали {Persons.persons_in_team_list[4]}.")
+
+
+ui.pushButton_ship.clicked.connect(ship)
 ui.pushButton.clicked.connect(plane1)
-ui.pushButton_2.clicked.connect(plane)
 ui.pushButton_2.clicked.connect(plane2)
-ui.pushButton_3.clicked.connect(plane)
 ui.pushButton_3.clicked.connect(plane3)
-ui.pushButton_4.clicked.connect(desert)
 ui.pushButton_4.clicked.connect(desert4)
-ui.pushButton_5.clicked.connect(jungle)
 ui.pushButton_5.clicked.connect(jungle5)
-ui.pushButton_6.clicked.connect(jungle)
 ui.pushButton_6.clicked.connect(jungle6)
-ui.pushButton_7.clicked.connect(plane)
 ui.pushButton_7.clicked.connect(jungle7)
-ui.pushButton_8.clicked.connect(plane)
 ui.pushButton_8.clicked.connect(plane8)
-ui.pushButton_9.clicked.connect(jungle)
 ui.pushButton_9.clicked.connect(jungle9)
-ui.pushButton_10.clicked.connect(desert)
 ui.pushButton_10.clicked.connect(desert10)
-ui.pushButton_11.clicked.connect(desert)
 ui.pushButton_11.clicked.connect(desert11)
 ui.pushButton_12.clicked.connect(mount12)
-ui.pushButton_13.clicked.connect(plane)
 ui.pushButton_13.clicked.connect(jungle13)
 ui.pushButton_14.clicked.connect(mount14)
 ui.pushButton_15.clicked.connect(mount15)
 ui.pushButton_16.clicked.connect(night)
 ui.pushButton_17.clicked.connect(research)
 ui.pushButton_18.clicked.connect(return_to_menu)
+ui.pushButton_1_advaturer.clicked.connect(to_show_situation_1st_Advanturer)
+ui.pushButton_2_advaturer.clicked.connect(to_show_situation_2nd_Advanturer)
+ui.pushButton_3_advaturer.clicked.connect(to_show_situation_3rd_Advanturer)
+ui.pushButton_4_advaturer.clicked.connect(to_show_situation_4th_Advanturer)
+ui.pushButton_5_advaturer.clicked.connect(to_show_situation_5th_Advanturer)
+
+Leader_s.pushButton_1_advaturer.clicked.connect(to_choose_1st_advaturer_as_leader)
+Leader_s.pushButton_2_advaturer.clicked.connect(to_choose_2nd_advaturer_as_leader)
+Leader_s.pushButton_3_advaturer.clicked.connect(to_choose_3rd_advaturer_as_leader)
+Leader_s.pushButton_4_advaturer.clicked.connect(to_choose_4th_advaturer_as_leader)
+Leader_s.pushButton_5_advaturer.clicked.connect(to_choose_5th_advaturer_as_leader)
 
 sys.exit(app.exec_())

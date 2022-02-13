@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="546ab175-729f-47f8-91e6-6df3a40a325b" name="Default Changelist" comment="3я версия. перед тем как всё переделать нахер. потому что Миша переделал игру">
+    <list default="true" id="546ab175-729f-47f8-91e6-6df3a40a325b" name="Default Changelist" comment="4 ая версия уже заебался делать а ещё делать и делать">
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/Template.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Science/OOP_Study.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data Science/OOP_Study.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Предметы.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Предметы.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,11 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="Template" />
+    </order>
+  </component>
   <component name="ProjectId" id="1mIRUEUi62qLPx5MCnVvbbQ35iA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,7 +47,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Data Science/OOP_Study.py" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -124,7 +131,7 @@
       <created>1609179131707</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1609179131707</updated>
+      <updated>1642617015379</updated>
     </task>
     <task id="LOCAL-00001" summary="3я версия">
       <created>1616833824437</created>
@@ -133,14 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1616833824437</updated>
     </task>
-    <task id="LOCAL-00002" summary="3я версия. перед тем как всё переделать нахер. потому что Миша переделал игру">
-      <created>1638806549953</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00003" summary="4 ая версия уже заебался делать а ещё делать и делать">
+      <changelist id="546ab175-729f-47f8-91e6-6df3a40a325b" name="Default Changelist" comment="4 ая версия уже заебался делать а ещё делать и делать" />
+      <created>1642616258054</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1638806549953</updated>
+      <updated>1642617015379</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +178,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3я версия" />
     <MESSAGE value="3я версия. перед тем как всё переделать нахер. потому что Миша переделал игру" />
-    <option name="LAST_COMMIT_MESSAGE" value="3я версия. перед тем как всё переделать нахер. потому что Миша переделал игру" />
+    <MESSAGE value="4 ая версия уже заебался делать а ещё делать и делать" />
+    <option name="LAST_COMMIT_MESSAGE" value="4 ая версия уже заебался делать а ещё делать и делать" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
